@@ -68,3 +68,30 @@ p {
   color: #444;
   font-weight: 500;
 }
+
+.sr-only {
+}
+
+@media screen and (max-width: 700px) {
+  nav ul li {
+    width: 100%;
+  }
+
+  main {
+    max-width: 98%;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .logo {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
