@@ -73,12 +73,16 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  nav ul li {
+  nav ul {
     width: 100%;
+    /* text-align: center; */
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   main {
-    max-width: 98%;
+    max-width: 94%;
     margin: 0 auto;
   }
 
