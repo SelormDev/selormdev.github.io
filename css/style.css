@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +16,14 @@ body {
   font-weight: 700;
   font-size: 2rem;
   text-decoration: none;
-  color: #444;
+  color: #f7ecec;
+  list-style: none;
+}
+
+/* ------------ Header Styles ------------ */
+
+header {
+  background-color: #000;
 }
 
 nav {
@@ -22,10 +31,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-  background: #fff;
+  background: #1b1b1b;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-decoration: none;
-  color: #444;
+  list-style: none;
+  /* color: #f1ebeb; */
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px;
 }
 
 nav ul {
@@ -37,21 +50,21 @@ nav ul {
   gap: 2rem;
 }
 
+/* ---------------- Main Styles ----------------- */
+
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* min-height: 100vh; */
-  /* padding: 20px 10%; */
-  /* max-width: 70%; */
-  /* margin: 0 auto; */
 }
 
 #Home {
-  background: url("../images/laptop.png") no-repeat center center/cover;
-  /* height: 100vh; */
-  /* border: 3px solid red; */
-  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 100vh;
+  gap: 5rem;
   max-height: 100vh;
 }
 
@@ -59,17 +72,30 @@ main {
   font-size: 3rem;
   color: #dbd0d0;
   text-align: center;
-  margin: 10% 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.avatar {
+  border-radius: 50%;
+  width: 80%;
+}
 p {
   line-height: 1.6;
   color: #444;
   font-weight: 500;
+  max-width: 60%;
+  margin: 2rem auto;
+  text-align: justify;
+  font-family: "Lora", serif;
 }
 
 .sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 700px) {
@@ -97,5 +123,35 @@ p {
     width: 1px;
     height: 1px;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  nav {
+    /* display: none; */
+    font-size: 16px;
+  }
+  .logo {
+    display: none;
+  }
+  #Home {
+    display: block;
+  }
+  .avatar {
+    /* display: block; */
+  }
+  p {
+    max-width: 100%;
+    line-height: 1.1;
+    /* letter-spacing: 1px; */
+    /* word-spacing: -1px; */
+    text-align: start;
   }
 }
