@@ -6,7 +6,15 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #fafafa;
+  background: #fdfdfd;
+}
+
+/* Navigation Bar Styling */
+
+nav {
+  background-color: rgb(223, 223, 223);
+  position: fixed;
+  width: 100%;
 }
 
 nav ul {
@@ -18,24 +26,40 @@ nav ul {
 nav ul li {
   font-size: 1.5rem;
   padding: 2rem;
-  margin: 0 20px;
+  margin: 0 15px;
 }
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Profile Styling */
 
 .about {
   display: flex;
-  flex: 1;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* height: 100vh; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10rem;
 }
 
 .name {
   font-size: 2rem;
   font-weight: 700;
-  width: 200%;
   padding: 1rem;
+  border: 2px solid #000;
 }
 
-p {
-  font-size: 1.5rem;
+.profile-pic {
+}
+
+.profile-pic-img {
+  width: 65%;
+}
+
+.info {
+  margin-top: -10rem;
+  text-align: center;
+  font-size: 2.5rem;
 }
