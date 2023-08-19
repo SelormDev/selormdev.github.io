@@ -48,7 +48,6 @@ nav ul li a {
   font-size: 2rem;
   font-weight: 700;
   padding: 1rem;
-  border: 2px solid #000;
 }
 
 .profile-pic {
@@ -62,4 +61,31 @@ nav ul li a {
   margin-top: -10rem;
   text-align: center;
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .about {
+    flex-direction: column;
+  }
+
+  .name {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin: -9rem auto 0 auto;
+  }
+
+  .profile-pic-img {
+    width: 80%;
+    margin: 2rem;
+  }
+
+  .info {
+    margin-top: 2rem;
+  }
 }
